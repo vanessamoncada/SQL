@@ -1,0 +1,41 @@
+CREATE TABLE bookstore (id INTEGER PRIMARY KEY, author TEXT, book_title TEXT, book_type TEXT, price INTEGER, quantity INTEGER);
+
+INSERT INTO bookstore VALUES (1, "Sarah J Maas", "A Court of Thorns and Roses", "paperback", 12.99, 15);
+INSERT INTO bookstore VALUES (2, "Sarah J Maas", "A Court of Mist and Fury", "hardcover", 19.99, 4);
+INSERT INTO bookstore VALUES (3, "Sarah J Maas", "A Court of Wings and Ruin", "hardcover", 19.99, 6);
+INSERT INTO bookstore VALUES (4, "Sarah J Maas", "A Court of Silver Flames", "paperback", 15.99, 10);
+INSERT INTO bookstore VALUES (5, "Sarah J Maas", "Crescent City", "hardcover", 19.99, 7);
+INSERT INTO bookstore VALUES (6, "Sarah J Maas", "A House of Breath and Sky", "paperback", 14.99, 10); 
+INSERT INTO bookstore VALUES (7, "Jennifer L Armentrout", "From Blood and Ash", "hardcover", 25.99, 5);
+INSERT INTO bookstore VALUES (8, "Jennifer L Armentrout", "A Kingdom of Flesh and Fire", "hardcover", 18.99, 10);
+INSERT INTO bookstore VALUES (9, "Jennifer L Armentrout", "A Crown of Gilded Bones", "paperback", 18.99, 7);
+INSERT INTO bookstore VALUES (10, "Jennifer L Armentrout", "The War of Two Queens", "paperback", 17.99, 2);
+INSERT INTO bookstore VALUES (11, "Jennifer L Armentrout", "A Shadow in the Ember", "hardcover", 20.99, 12);
+INSERT INTO bookstore VALUES (12, "Jennifer L Armentrout", "A Light in the Flame", "paperback", 12.99, 12);
+INSERT INTO bookstore VALUES (13, "Tahereh Mafi", "Shatter Me", "paperback", 10.99, 10);
+INSERT INTO bookstore VALUES (14, "Tahareh Mafi", "Unravel Me", "paperback", 10.99, 2);
+INSERT INTO bookstore VALUES (15, "Tahereh Mafi", "Ignite Me", "paperback", 11.99, 3);
+INSERT INTO bookstore VALUES (16, "Tahareh Mafi", "Restore Me", "paperback", 12.99, 3);
+INSERT INTO bookstore VALUES (17, "Tahareh Mafi", "Defy Me", "paperback", 10.99, 7);
+INSERT INTO bookstore VALUES (18, "Tahareh Mafi", "Imagine Me", "paperback", 12.99, 7);
+
+-- what books are priced at 12.99 or lower
+SELECT * from bookstore
+WHERE price <12.99;
+
+
+-- display only paperback titles priced at 10.99
+SELECT book_title from bookstore 
+where book_type="paperback" AND price=10.99;
+
+-- calculate avg paperback price
+SELECT avg(price) "avg paperback price" 
+FROM bookstore WHERE book_type="paperback";
+
+-- display quantity of books in descending order
+SELECT author, book_title, quantity
+FROM bookstore
+ORDER BY quantity desc;
+
+
+
