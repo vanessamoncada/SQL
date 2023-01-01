@@ -1,3 +1,5 @@
+-- Create a bookstore database
+
 CREATE TABLE bookstore (id INTEGER PRIMARY KEY, author TEXT, book_title TEXT, book_type TEXT, price INTEGER, quantity INTEGER);
 
 INSERT INTO bookstore VALUES (1, "Sarah J Maas", "A Court of Thorns and Roses", "paperback", 12.99, 15);
