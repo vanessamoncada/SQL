@@ -1,0 +1,145 @@
+/* ariana grande discography */ 
+
+CREATE TABLE ariana_grande_discography (id INTEGER PRIMARY KEY, song_name TEXT, album TEXT, year INTEGER);
+
+/* yours truly */ 
+
+INSERT INTO ariana_grande_discography VALUES (1,"honeymoon avenue","yours truly", 2013);
+INSERT INTO ariana_grande_discography VALUES (2, "baby i", "yours truly", 2013);
+INSERT INTO ariana_grande_discography VALUES (3, "right there", "yours truly", 2013);
+INSERT INTO ariana_grande_discography VALUES (4, "tattoed heart", "yours truly", 2013);
+INSERT INTO ariana_grande_discography VALUES (5, "lovin' it", "yours truly", 2013);
+INSERT INTO ariana_grande_discography VALUES (6, "piano", "yours truly", 2013);
+INSERT INTO ariana_grande_discography VALUES (7, "daydreaming", "yours truly", 2013);
+INSERT INTO ariana_grande_discography VALUES (8, "the way", "yours truly", 2013);
+INSERT INTO ariana_grande_discography VALUES (9, "you'll never know", "yours truly", 2013);
+INSERT INTO ariana_grande_discography VALUES (10, "almost is never enough", "yours truly", 2013);
+INSERT INTO ariana_grande_discography VALUES (11, "popular song", "yours truly", 2013);
+INSERT INTO ariana_grande_discography VALUES (12, "better left unsaid", "yours truly", 2013);
+
+/* my everything */
+
+INSERT INTO ariana_grande_discography VALUES (13, "intro", "my everything", 2014);
+INSERT INTO ariana_grande_discography VALUES (14, "problem", "my everything", 2014);
+INSERT INTO ariana_grande_discography VALUES (15, "one last time", "my everything", 2014);
+INSERT INTO ariana_grande_discography VALUES (16, "why try", "my everything", 2014);
+INSERT INTO ariana_grande_discography VALUES (17, "break free", "my everything", 2014);
+INSERT INTO ariana_grande_discography VALUES (18, "best mistake", "my everything", 2014);
+INSERT INTO ariana_grande_discography VALUES (19, "be my baby", "my everything", 2014);
+INSERT INTO ariana_grande_discography VALUES (20, "break your heart right back", "my everything", 2014);
+INSERT INTO ariana_grande_discography VALUES (21, "love me harder", "my everything", 2014);
+INSERT INTO ariana_grande_discography VALUES (22, "just a little bit of your heart", "my everything", 2014);
+INSERT INTO ariana_grande_discography VALUES (23, "hands on me", "my everything", 2014);
+INSERT INTO ariana_grande_discography VALUES (24, "my everything", "my everything", 2014);
+
+/* dangerous woman */
+
+INSERT INTO ariana_grande_discography VALUES (25, "moonlight", "dangerous woman", 2016);
+INSERT INTO ariana_grande_discography VALUES (26, "dangerous woman", "dangerous woman", 2016);
+INSERT INTO ariana_grande_discography VALUES (27, "be alright", "dangerous woman", 2016);
+INSERT INTO ariana_grande_discography VALUES (28, "into you", "dangerous woman", 2016);
+INSERT INTO ariana_grande_discography VALUES (29, "side to side", "dangerous woman", 2016);
+INSERT INTO ariana_grande_discography VALUES (30, "let me love you", "dangerous woman", 2016);
+INSERT INTO ariana_grande_discography VALUES (31, "greedy", "dangerous woman", 2016);
+INSERT INTO ariana_grande_discography VALUES (32, "leave me lonely", "dangerous woman", 2016);
+INSERT INTO ariana_grande_discography VALUES (33, "everyday", "dangerous woman", 2016);
+INSERT INTO ariana_grande_discography VALUES (34, "sometimes", "dangerous woman", 2016);
+INSERT INTO ariana_grande_discography VALUES (35, "i don't care", "dangerous woman", 2016);
+INSERT INTO ariana_grande_discography VALUES (36, "bad decisions", "dangerous woman", 2016);
+INSERT INTO ariana_grande_discography VALUES (37, "touch it", "dangerous woman", 2016);
+INSERT INTO ariana_grande_discography VALUES (38, "knew better/forever boy", "dangerous woman", 2016);
+INSERT INTO ariana_grande_discography VALUES  (39, "thinking about you", "dangerous woman", 2016);
+
+/* sweetener */
+
+INSERT INTO ariana_grande_discography VALUES (40, "raindrops (an angel cried)", "sweetener", 2018);
+INSERT INTO ariana_grande_discography VALUES (41, "blazed", "sweetener", 2018);
+INSERT INTO ariana_grande_discography VALUES (42, "the light is coming", "sweetener", 2018);
+INSERT INTO ariana_grande_discography VALUES (43, "R.E.M", "sweetener", 2018);
+INSERT INTO ariana_grande_discography VALUES (44, "god is a woman", "sweetener", 2018);
+INSERT INTO ariana_grande_discography VALUES (45, "sweetener", "sweetener", 2018);
+INSERT INTO ariana_grande_discography VALUES (46, "successful", "sweetener", 2018);
+INSERT INTO ariana_grande_discography VALUES (47, "everytime", "sweetener", 2018);
+INSERT INTO ariana_grande_discography VALUES (48, "breathin", "sweetener", 2018);
+INSERT INTO ariana_grande_discography VALUES (49, "no tears left to cry", "sweetener", 2018);
+INSERT INTO ariana_grande_discography VALUES (50, "borderline", "sweetener", 2018);
+INSERT INTO ariana_grande_discography VALUES (51, "better off", "sweetener", 2018);
+INSERT INTO ariana_grande_discography VALUES (52, "goodnight n go", "sweetener", 2018);
+INSERT INTO ariana_grande_discography VALUES (53, "pete davidson", "sweetener", 2018);
+INSERT INTO ariana_grande_discography VALUES (54, "get well soon", "sweetener", 2018);
+
+/* thank u, next */
+
+INSERT INTO ariana_grande_discography VALUES (55, "imagine", "thank u, next", 2019);
+INSERT INTO ariana_grande_discography VALUES (56, "needy", "thank u, next", 2019);
+INSERT INTO ariana_grande_discography VALUES (57, "NASA", "thank u, next", 2019);
+INSERT INTO ariana_grande_discography VALUES (58, "bloodline", "thank u, next", 2019);
+INSERT INTO ariana_grande_discography VALUES (59, "fake smile", "thank u, next", 2019);
+INSERT INTO ariana_grande_discography VALUES (60, "bad idea", "thank u, next", 2019);
+INSERT INTO ariana_grande_discography VALUES (61, "makeup", "thank u, next", 2019);
+INSERT INTO ariana_grande_discography VALUES (62, "ghostin", "thank u, next", 2019);
+INSERT INTO ariana_grande_discography VALUES (63, "in my head", "thank u, next", 2019);
+INSERT INTO ariana_grande_discography VALUES (64, "7 rings", "thank u, next", 2019);
+INSERT INTO ariana_grande_discography VALUES (65, "thank u, next", "thank u, next", 2019);
+INSERT INTO ariana_grande_discography VALUES (66, "break up with your girlfriend, i'm bored", "thank u, next", 2019);
+
+/* positions */
+
+INSERT INTO ariana_grande_discography VALUES (67, "shut up", "positions", 2020);
+INSERT INTO ariana_grande_discography VALUES (68, "34+35", "positions", 2020);
+INSERT INTO ariana_grande_discography VALUES (69, "motive", "positions", 2020);
+INSERT INTO ariana_grande_discography VALUES (70, "just like magic", "positions", 2020);
+INSERT INTO ariana_grande_discography VALUES (71, "off the table", "positions", 2020);
+INSERT INTO ariana_grande_discography VALUES (72, "six thirty", "positions", 2020);
+INSERT INTO ariana_grande_discography VALUES (73, "safety net", "positions", 2020);
+INSERT INTO ariana_grande_discography VALUES (74, "my hair", "positions", 2020);
+INSERT INTO ariana_grande_discography VALUES (75, "nasty", "positions", 2020);
+INSERT INTO ariana_grande_discography VALUES (76, "west side", "positions", 2020);
+INSERT INTO ariana_grande_discography VALUES (77, "love language", "positions", 2020);
+INSERT INTO ariana_grande_discography VALUES (78, "positions", "positions", 2020);
+INSERT INTO ariana_grande_discography VALUES (79, "obvious", "positions", 2020);
+INSERT INTO ariana_grande_discography VALUES (80, "POV", "positions", 2020);
+
+
+/* sweetener world tour setlist */
+CREATE TABLE sweetener_setlist (id INTEGER PRIMARY KEY, song TEXT, song_id INTEGER);
+
+INSERT INTO sweetener_setlist VALUES (1, "raindrops (an angel cried)", 40);
+INSERT INTO sweetener_setlist VALUES (2, "god is a woman", 44);
+INSERT INTO sweetener_setlist VALUES (3, "bad idea", 60);
+INSERT INTO sweetener_setlist VALUES (4, "break up with your girlfriend, i'm bored", 66);
+INSERT INTO sweetener_setlist VALUES (5, "R.E.M", 43);
+INSERT INTO sweetener_setlist VALUES (6, "be alright", 27);
+INSERT INTO sweetener_setlist VALUES (7, "sweetener", 45);
+INSERT INTO sweetener_setlist VALUES (8, "successful", 46);
+INSERT INTO sweetener_setlist VALUES (9, "side to side", 29);
+INSERT INTO sweetener_setlist VALUES (10, "7 rings", 64);
+INSERT INTO sweetener_setlist VALUES (11, "love me harder", 21);
+INSERT INTO sweetener_setlist VALUES (12, "breathin", 48);
+INSERT INTO sweetener_setlist VALUES (13, "needy", 56);
+INSERT INTO sweetener_setlist VALUES (14, "fake smile", 59);
+INSERT INTO sweetener_setlist VALUES (15, "makeup", 61);
+INSERT INTO sweetener_setlist VALUES (16, "right there", 3);
+INSERT INTO sweetener_setlist VALUES (17, "you'll never know", 9);
+INSERT INTO sweetener_setlist VALUES (18, "break your heart right back", 20);
+INSERT INTO sweetener_setlist VALUES (19, "NASA", 57);
+INSERT INTO sweetener_setlist VALUES (20, "everytime", 47);
+INSERT INTO sweetener_setlist VALUES (21, "the light is coming", 42);
+
+
+-- display songs from sweetener world tour setlist with corresponding album name/year
+SELECT sweetener_setlist.song AS SWT_setlist, agd.album, agd.year
+FROM ariana_grande_discography AS agd 
+JOIN sweetener_setlist
+ON agd.id=sweetener_setlist.song_id;
+
+
+-- display songs from sweetener world tour setlist released in 2018 in alphabetical order 
+SELECT sweetener_setlist.song AS SWT_setlist, agd.album, agd.year
+FROM ariana_grande_discography AS agd 
+JOIN sweetener_setlist 
+ON agd.id=sweetener_setlist.song_id
+WHERE agd.year = 2018 
+ORDER BY SWT_setlist
+
+
