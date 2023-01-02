@@ -142,4 +142,31 @@ ON agd.id=sweetener_setlist.song_id
 WHERE agd.year = 2018 
 ORDER BY SWT_setlist
 
+/* ag songs featuring other artists */
+
+CREATE TABLE featured_artists (id INTEGER PRIMARY KEY, artist TEXT, song_id INTEGER);
+
+INSERT INTO featured_artists VALUES (1, "the weeknd", 71);
+INSERT INTO featured_artists VALUES (2, "the weeknd", 21);
+INSERT INTO featured_artists VALUES (3, "ty dolla sign", 73);
+INSERT INTO featured_artists VALUES (4, "big sean", 14);
+INSERT INTO featured_artists VALUES (5, "big sean", 18);
+INSERT INTO featured_artists VALUES (6, "nicki minaj", 29);
+INSERT INTO featured_artists VALUES (7, "nicki minaj", 42);
+INSERT INTO featured_artists VALUES (8, "doja cat", 69);
+
+-- display all featured artists with corresponding song/album/year by most recent year
+SELECT f_a.artist AS collab, agd.song_name AS song, agd.album, agd.year
+FROM ariana_grande_discography AS agd
+JOIN featured_artists AS f_a
+ON agd.id=f_a.song_id
+ORDER BY year desc;
+
+-- display all featured artists on my everything album 
+SELECT f_a.artist AS collab, agd.song_name AS song, agd.album, agd.year
+FROM ariana_grande_discography AS agd
+JOIN featured_artists AS f_a
+ON agd.id=f_a.song_id
+WHERE agd.album = "my everything"; 
+
 
