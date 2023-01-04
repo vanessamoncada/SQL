@@ -1,4 +1,6 @@
--- Create a bookstore database
+#In this SQL code, I showcase the creation of a table containing book information and answer questions based on that data.
+
+/* creating book information table */
 
 CREATE TABLE bookstore (id INTEGER PRIMARY KEY, author TEXT, book_title TEXT, book_type TEXT, price INTEGER, quantity INTEGER);
 
@@ -21,23 +23,22 @@ INSERT INTO bookstore VALUES (16, "Tahareh Mafi", "Restore Me", "paperback", 12.
 INSERT INTO bookstore VALUES (17, "Tahareh Mafi", "Defy Me", "paperback", 10.99, 7);
 INSERT INTO bookstore VALUES (18, "Tahareh Mafi", "Imagine Me", "paperback", 12.99, 7);
 
--- what books are priced at 12.99 or lower
-SELECT * from bookstore
-WHERE price <12.99;
+    /* questions */
+
+    -- what books are priced at 12.99 or lower
+      SELECT * from bookstore
+      WHERE price <12.99;
 
 
--- display only paperback titles priced at 10.99
-SELECT book_title from bookstore 
-where book_type="paperback" AND price=10.99;
+    -- display only paperback titles priced at 10.99
+      SELECT book_title from bookstore 
+      where book_type="paperback" AND price=10.99;
 
--- calculate avg paperback price
-SELECT avg(price) "avg paperback price" 
-FROM bookstore WHERE book_type="paperback";
+    -- calculate avg paperback price
+      SELECT avg(price) "avg paperback price" 
+      FROM bookstore WHERE book_type="paperback";
 
--- display quantity of books in descending order
-SELECT author, book_title, quantity
-FROM bookstore
-ORDER BY quantity desc;
-
-
-
+    -- display quantity of books in descending order
+      SELECT author, book_title, quantity
+      FROM bookstore
+      ORDER BY quantity desc;
