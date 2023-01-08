@@ -1,0 +1,54 @@
+#In this SQL code, I will be cleaning up and answering questions based on a large dataset using standard SQl. 
+
+-- how many orders were placed in January?
+
+    SELECT count(orderid)
+    FROM bit_db.jansales jan
+    WHERE length(orderid)= 6
+    AND orderid <> 'order_id';
+    
+-- how many of those orders were for an iphone?
+
+    SELECT count(orderid)
+    FROM bit_db.jansales jan
+    WHERE length(orderid)= 6
+    AND orderid <> 'order_id'
+    AND product = 'iPhone';
+    
+-- select the customer account numbers for all the orders that were placed in february.
+
+    SELECT distinct acctnum
+    FROM bit_db.febsales feb
+    INNER JOIN bit_db.customers cust
+    ON feb.orderid=cust.order_id;
+    
+-- which product was the cheapest one sold in january, and what was the price?
+
+    SELECT distinct product, price
+    FROM bit_db.jansales
+    WHERE price <> ''
+    ORDER BY price asc limit 1;
+    
+-- what is the total revenue for each product sold in january?
+
+    SELECT product, SUM(quantity)*price as revenue
+    FROM bit_db.jansales
+    WHERE product <> '' 
+    GROUP BY product;
+    
+-- which products were sold in february at 548 Lincoln St, Seattle, WA 98101, how many of each were sold, and what was the total revenue?
+
+    SELECT product, quantity, price*quantity AS revenue
+    FROM bit_db.FebSales
+    WHERE location = '548 Lincoln St, Seattle, WA 98101';
+    
+-- how many customers ordered more than 2 products at a time in february, and what was the average amount spent for those customers?
+
+    SELECT count(distinct cust.acctnum) AS 'customers who ordered > 2',
+    avg(quantity*price) AS 'avg spent'
+    FROM bit_db.FebSales feb
+    LEFT JOIN bit_db.customers cust
+    ON feb.order=cust.order_id
+    WHERE feb.quantity>2
+    AND length(orderid)=6
+    AND orderid <> 'Order Id';
