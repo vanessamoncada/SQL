@@ -53,10 +53,48 @@
     AND length(orderid)=6
     AND orderid <> 'Order Id';
     
- -- list all the products sold in los angeles in february, and include how many of each were sold.
+-- list all the products sold in los angeles in february, and include how many of each were sold.
  
     SELECT product, SUM(quantity)
     FROM bit_db.febsales
     WHERE location LIKE '%Los Angeles%'
     GROUP BY product;
+    
+-- which locations in new york received at least 3 orders in january and how many orders did they each receive?
+
+    SELECT distinct location, count(orderID)
+    FROM bit_db.jansales
+    WHERE location like '%NY%'
+    GROUP BY location
+    HAVING count(orderID)>2;
+
+-- How many of each type of headphone were sold in February?
+
+    SELECT peoduxct, sum(quantity) AS quantity
+    FROM bit_db.FebSales
+    WHERE product like '%Headphone%'
+    GROUP BY product;
+
+-- what was the average amount spent per account in february? 
+
+    SELECT avg(quantity*price)
+    FROM bit_db.febsales feb
+    LEFT JOIN bit_db.customers cust
+    ON feb.orderid=cust.order_id
+    WHERE length(orderid) = 6
+    AND orderid<> 'Order Id';
+
+-- what was the average quantity of products purchased per account in february? 
+
+SELECT sum(quantity)/count(cust.acctnum)
+FROM bit_db.febsales feb 
+LEFT JOIN bit_db.customers cust
+ON feb.orderid=cust.order_id
+WHERE length(orderid)=6
+AND orderid<> 'Order Id':
+
+
+
+
+
 
