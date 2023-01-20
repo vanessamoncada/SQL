@@ -1,6 +1,6 @@
 #In this SQL code, I will be cleaning up and answering questions based on a large dataset using standard SQL. 
 
--- how many orders were placed in January?
+-- how many orders were placed in january?
 
     SELECT count(orderid)
     FROM bit_db.jansales jan
@@ -44,11 +44,11 @@
     
 -- how many customers ordered more than 2 products at a time in february, and what was the average amount spent for those customers?
 
-    SELECT count(distinct cust.acctnum) AS 'customers who ordered > 2',
+    SELECT count(distinct cust.acctnum) AS '# of cust who ordered > 2',
     avg(quantity*price) AS 'avg spent'
     FROM bit_db.FebSales feb
     LEFT JOIN bit_db.customers cust
-    ON feb.order=cust.order_id
+    ON feb.orderid=cust.order_id
     WHERE feb.quantity>2
     AND length(orderid)=6
     AND orderid <> 'Order Id';
@@ -68,7 +68,7 @@
     GROUP BY location
     HAVING count(orderID)>2;
 
--- How many of each type of headphone were sold in February?
+-- how many of each type of headphone were sold in february?
 
     SELECT peoduxct, sum(quantity) AS quantity
     FROM bit_db.FebSales
@@ -86,15 +86,21 @@
 
 -- what was the average quantity of products purchased per account in february? 
 
-SELECT sum(quantity)/count(cust.acctnum)
-FROM bit_db.febsales feb 
-LEFT JOIN bit_db.customers cust
-ON feb.orderid=cust.order_id
-WHERE length(orderid)=6
-AND orderid<> 'Order Id':
+    SELECT sum(quantity)/count(cust.acctnum)
+    FROM bit_db.febsales feb 
+    LEFT JOIN bit_db.customers cust
+    ON feb.orderid=cust.order_id
+    WHERE length(orderid)=6
+    AND orderid<> 'Order Id':
 
 
+-- which product brought in the most revenue in january and how much revenue did it bring in total?
 
+    SELECT sum(quantity*price) as revenue, product
+    FROM bit_db.jansales
+    GROUP BY product
+    ORDER BY sum(quantity*price) desc
+    LIMIT 1;
 
 
 
